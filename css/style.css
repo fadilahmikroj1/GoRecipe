@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 16px;
+}
+
+.navbar {
+  display: flex;
+  height: 60px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* LOGO SECTION */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-title {
+  font-size: 1.5rem;
+}
+/* END LOGO SECTION */
+
+/* NAVBAR MENU SECTION */
+.navbar-menu {
+  display: flex;
+  gap: 1.5rem;
+  padding-left: 0;
+}
+
+.menu-item {
+  list-style-type: none;
+}
+
+.menu-item a {
+  color: black;
+  text-decoration: none;
+  padding: .5rem 1.3rem;
+  border-radius: 999px;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+}
+
+.menu-item:hover a {
+  background-color: rgb(240, 64, 64);
+  color: white;
+}
+/* END NAVBAR MENU */
+/* LOGIN */
+.login-form {
+  display: flex;
+  gap: 0.7rem;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.btn-login a, .btn-sign a {
+  font-size: 0.9rem;
+  padding: .5rem 1rem;
+  border-radius: 999px;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+}
+
+.btn-login a{
+  background-color: transparent;
+  border: none;
+  color: rgb(240, 64, 64);
+  border: 1px solid rgb(240, 64, 64);
+  text-decoration: none;
+}
+
+.btn-login a:hover {
+  background-color: rgb(240, 64, 64);
+  color: white;
+}
+
+.btn-sign a{
+  background-color: rgb(240, 64, 64);
+  color: white;
+  border: none;
+  text-decoration: none;
+}
+
+.btn-sign a:hover {
+  background-color: transparent;
+  border: 1px solid rgb(240, 64, 64);
+  color: rgb(240, 64, 64);
+}
+/* END NAVBAR SECTION */
+
+/* HERO SECTION */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.hero-left {
+  margin: auto 0;
+}
+
+.hero-title {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  line-height: 3.6rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.hero-title h1 {
+  margin: 0;
+}
+
+.hero-span {
+  color: rgb(240, 64, 64);
+}
+
+.hero-description p {
+  margin-top: 0;
+}
+
+.btn-start {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+  background-color: rgb(240, 64, 64);
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+
+.btn-start:hover {
+  background-color: transparent;
+  border: 1px solid rgb(240, 64, 64);
+  color: black;
+}
+/* END HERO SECTION */
+
+/* ABOUT SECTION */
+.about-section {
+  margin-top: 3.4rem;
+}
+
+.about-title {
+  margin-top: 0;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 0.8rem;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-card img{
+  object-fit: contain;
+}
+
+.feature-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature-title {
+  margin: 0;
+}
+
+.feature-desc {
+  font-size: 0.7rem;
+  margin-top: 0.5rem;
+  text-align: center;
+  font-weight: 400;
+}
+/* END ABOUT SECTION */
+
+/* FOOD SECTION */
+.food-section {
+  margin-top: 3.5rem;
+}
+
+.food-title {
+  margin-top: 0;
+  font-weight: 500;
+}
+
+.food-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.food-header p {
+  margin: 0;
+}
+
+.more-link {
+  font-size: 0.7rem;
+  color: black;
+}
+
+.more-link:hover {
+  color:rgb(240, 64, 64);
+}
+
+.food-name {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  font-weight: 500;
+}
+
+.food-card img {
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.more-info {
+  margin-top: 0.2rem;
+  font-size: 14px;
+  padding: 0.3rem 1rem;
+  background-color: rgb(240, 64, 64);
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.asian-food, .japanese-food {
+  margin-top: 2rem;
+}
+/* END FOOD SECTION */
+
+/* PROFILE WEB SECTION */
+.profile-section {
+  display: flex;
+  margin: 2.5rem 0;
+  flex-direction: row;
+}
+/* END PROFILE SECTION */
+
+/* FOOTER SECTION */
+footer {
+  margin-top: 2rem;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color:rgb(240, 64, 64);
+  justify-content: center;
+}
+
+.footer-img {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* END FOOTER SECTION */
+
+/* MEDIA QUERY */
+@media screen and (max-width: 768px) {
+  * {
+    flex-direction: column;
+  }
+
+  .navbar-logo {
+    height: 100%;
+  }
+
+  .navbar-list {
+    width: 270px;
+    display: none;
+  }
+
+  .navbar-menu {
+    gap: 0.5rem;
+    padding-left: 0;
+    align-items: center;
+    padding: 0.5rem;
+    margin: 0.5rem auto;
+  }
+
+  .menu-item a{
+    padding: 0.5rem;
+  }
+
+  .login-form {
+    gap: 0.5rem;
+    padding-left: 0;
+    align-items: center;
+    display: none;
+    margin: 0.5rem auto;
+  }
+
+  .btn-login {
+    margin-bottom: 1rem;
+  }
+
+  .hero-right {
+    margin: auto;
+  }
+
+  .hero-right img {
+    width: 350px;
+    height: 350px;
+  }
+
+  .food-title{
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .food-header {
+    margin-bottom: 0;
+  }
+
+  .food-section{
+    width: 270px;
+    margin: 3.5rem auto 0 auto;
+  }
+
+  .more-link {
+    align-self: flex-end;
+    margin-top: 0.4rem;
+  }
+
+  .food-card {
+    margin-bottom: 2rem;
+  }
+
+  .food-card:last-child {
+    margin-bottom: 0;
+  }
+
+  .profile-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .desc, .profile {
+    width: 100%;
+  }
+}
